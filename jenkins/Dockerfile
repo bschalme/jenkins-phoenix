@@ -16,6 +16,7 @@ USER jenkins
 # Add core jenkins config
 ADD config.xml /var/jenkins_home/config.xml
 ADD backup.xml /var/jenkins_home/backup.xml
+ADD hudson.tasks.Maven.xml /var/jenkins_home/hudson.tasks.Maven.xml
 # Add replace_config.sh script to allow updates to config.xml
 ADD replace_config.sh /replace_config.sh
 # Add startup script and use as entrypoint
